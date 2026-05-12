@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --accent: #4f46e5;
+  --accent-muted: #e0e7ff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0f172a;
+    --foreground: #f1f5f9;
+    --card: #1e293b;
+    --accent: #818cf8;
+    --accent-muted: #312e81;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    'PingFang SC',
+    'Microsoft YaHei',
+    sans-serif;
+}
